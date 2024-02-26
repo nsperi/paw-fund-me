@@ -5,7 +5,7 @@ import colors from '../utils/golbals/colors'
 
 const CardCategory = ({item, navigation}) => {
   return (
-    <Pressable onPress={()=>navigation.navigate(item)}>
+    <Pressable onPress={()=>navigation.navigate('PetsByCategory',{item})}>
       <ShadowPrimary style={styles.container}>
         <Text style={styles.text}>{item}</Text>
       </ShadowPrimary>

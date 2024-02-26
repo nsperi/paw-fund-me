@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "nombre": "Rufo",
         "valor": "30000",
         "img":"/Images/rufo.jpg",
@@ -8,6 +9,7 @@
     },
         
     {
+        "id": 2,
         "nombre": "Perdita",
         "valor": "20000",
         "img":"/Images/perdita.jpg",
@@ -16,6 +18,7 @@
     },
     
     {
+        "id": 3,
         "nombre": "Sidney",
         "valor": "10000",
         "img":"/Images/sidney.jpg",
@@ -24,6 +27,7 @@
     },
     
     {
+        "id": 4,
         "nombre": "Conan",
         "valor": "50000",
         "img":"/Images/conan.jpg",
@@ -32,6 +36,7 @@
     },
     
     {
+        "id": 5,
         "nombre": "Viena",
         "valor": "30000",
         "img":"/Images/viena.jpg",
@@ -39,6 +44,7 @@
         "stock":30000
     },
     {
+        "id": 6,
         "nombre": "Michigan",
         "valor": "60000",
         "img":"/Images/michigan.jpg",

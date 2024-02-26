@@ -5,7 +5,7 @@ import colors from '../utils/golbals/colors'
 
 
 
-const Home = (navigation) => {
+const Home = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Header title='Paw Fund Me'/>

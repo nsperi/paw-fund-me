@@ -3,7 +3,7 @@ import { Header } from '../components/Header'
 import pets from '../utils/data/pets.json'
 
 
-const PetsByCategory = ({categorySelected}) => {
+const PetsByCategory = ({navigation, route}) => {
 
   const [petsFiltered, setPetsFiltered] = useState([])
 
