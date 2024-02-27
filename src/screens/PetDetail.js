@@ -1,14 +1,16 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native';
+
 import colors from '../utils/golbals/colors'
 
-const PetDetail = ({ pet }) => {
+const PetDetail = ({ item }) => {
   return (
-    <View style={styles.container}>
-      <Image source={{ uri: pet.img }} style={styles.image} />
-      <Text style={styles.name}>{pet.nombre}</Text>
-      <Text style={styles.description}>{pet.descripcion}</Text>
-      <Text style={styles.price}>Necesitamos recaudar: ${pet.valor}</Text>
+    <View style={styles.card}>
+      <View style={styles.container}>
+        <Text style={styles.text}>{item.nombre}</Text>
+        <Text style={styles.text2}>{item.descripcion}</Text>
+        <Text style={styles.text2}>Necesitamos recaudar ${item.stock}</Text>
+      </View>
     </View>
   );
 };

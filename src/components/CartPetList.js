@@ -2,6 +2,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import ButtonPrimary from './ButtonPrimary'
 
+
 const CartPetList = ({item, onHandlerModalDelete, screenWidth}) => {
   return (
     <View style={[styles.petCard, {width:screenWidth-40}]}>

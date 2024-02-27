@@ -1,25 +1,18 @@
 import { StyleSheet, Text, View, FlatList } from 'react-native'
 import React from 'react'
 import CartPetList from './CartPetList'
+import pets from '../utils/data/pets.json'
+import PetDetail from '../screens/PetDetail'
 
-const ListPets = ({pets,
-                    onHandlerModalDelete,
-                    screenWidth}) => {
+const ListPets = ({navigation}) => {
   return (
     <View style={styles.petsContainer}>
         <FlatList
-          horizontal={true}
-          pagingEnabled={true}
           data={pets}
-          keyExtractor={item => item.id}
-          renderItem={({item})=>(
-                            <CartPetList item={item}
-                                            onHandlerModalDelete={onHandlerModalDelete}
-                                            screenWidth={screenWidth}
-                            />
-          )}
+          keyExtractor={item=>item}
+          renderItem={({item})=><PetDetail item={item} navigation={navigation}/>}
         />
-      </View>
+    </View>
   )
 }
 

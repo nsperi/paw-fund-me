@@ -4,13 +4,20 @@ import colors from '../utils/golbals/colors'
 
 
 const CardCategory = ({item, navigation}) => {
+  const handlePress = () => {
+    if (item === 'QUIERO DONAR') {
+      navigation.navigate('PetDetail');
+    } else if (item === 'NECESITO AYUDA') {
+      navigation.navigate('PetRegistration');
+    }
+  };
+
   return (
-    <Pressable onPress={()=>navigation.navigate('PetsByCategory',{item})}>
+    <Pressable onPress={handlePress}>
       <ShadowPrimary style={styles.container}>
         <Text style={styles.text}>{item}</Text>
       </ShadowPrimary>
     </Pressable>
-    
   )
 }
 

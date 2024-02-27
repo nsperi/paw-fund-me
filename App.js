@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar'
 import {useFonts} from 'expo-font' 
 import colors from './src/utils/golbals/colors'
 import MainNavigator from './src/navigation/MainNavigatior'
+import PetDetail from './src/screens/PetDetail'
 
 const App = () => {
 
